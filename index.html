@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>S
-    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+      
+        <link rel="stylesheet" href="assets/css/style.css">
+      
+        <title>Guess the Color</title>
+      </head>
+
+<body>
+    <body>
+  <h1 class="heading">Guess the Color</h1>
+
+  <div class="game-area">
+    <div id="color-box"></div>
+
+    <div class="input-area">
+      <label for="color-guess">Enter a color:</label>
+      <input type="text" id="color-guess">
+      <button id="submit-button">Submit</button>
+    </div>
+
+    <div id="result-message"></div>
+  </div>
+
+  <div class="score-area">
+    <p class="scores">Correct Guesses: <span id="score">0</span></p>
+    <p class="scores">Incorrect Guesses: <span id="incorrect">0</span></p>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
 </body>
 </html>
