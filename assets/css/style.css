@@ -1,58 +1,87 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: #f5f5f5;
-  }
-  
-  .heading {
-    font-family: 'Righteous', cursive;
-    text-align: center;
-    font-size: 4rem;
-    margin-top: 2rem;
-  }
-  
-  .game-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-  }
-    
-  #color-box {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-  }
-  
-  #color-guess {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  #submit-button {
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  #submit-button:hover {
-    background-color: #3E8E41;
-  }
-  
-  #result-message {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.heading {
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 5rem;
+  text-color: #4CAF50;
+}
+
+/* @keyframes .heading {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+} */
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+#color-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+}
+
+#color-guess {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+
+}
+
+#submit-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+/*#submit-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 100%;
+  background-color: #C87A5A;
+  color: #fafafa;
+  display: block;
+}*/
+
+#submit-button:hover {
+  background-color: #3E8E41;
+}
+
+#result-message {
+  margin-top: 5rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.score-area {
+  margin: 150px 10% 0 0;
+  color: #4CAF50;
+  background-color: rgba(60, 60, 60, 0.889);
+  max-width: 400px;
+  position: absolute;
+  left: 10%;
+  padding: 30px;
+}

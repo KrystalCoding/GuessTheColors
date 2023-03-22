@@ -20,7 +20,7 @@ const colors = [
 const colorBox = document.getElementById("color-box");
 const colorGuess = document.getElementById("color-guess");
 const submitButton = document.getElementById("submit-button");
-const scoreDisplay = document.getElementById("score");
+const scoreDisplay = document.getElementById("correct");
 const scoreDisplay2 = document.getElementById("incorrect");
 
 let correctGuesses = 0;
@@ -57,11 +57,13 @@ function handleGuess() {
  */
 
   if (guessedColor === correctColor) {
-    alert("Correct!");
+    /**alert("You got lucky! Play again.");*/
     correctGuesses++;
     scoreDisplay.textContent = correctGuesses;
+
+    document.getElementById("result-message").textContent = `The correct color was ${correctColor}.`;
   } else {
-    alert("Incorrect! Try again.");
+    /**alert("You failed miserably! Try again.");*/
     incorrectGuesses++;
     scoreDisplay2.textContent = incorrectGuesses;
 
