@@ -1,30 +1,51 @@
 /**
  * Defines colors to be used in the main Color game block
-*/
+ */
 
 const colors = [
-    "red",
-    "blue",
-    "green",
-    "yellow",
-    "purple",
-    "orange",
-    "pink",
-    "brown",
-  ];
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "purple",
+  "orange",
+  "pink",
+  "brown",
+];
 
 /**
  * Connects .js to .html via getElement grabber things
  */
 
+const instructionsButton = document.getElementById("instructions-button");
+const instructionsSection = document.getElementById("instructions");
+const returnHomeButton = document.getElementById("home-btn");
 const colorBox = document.getElementById("color-box");
 const colorGuess = document.getElementById("color-guess");
 const submitButton = document.getElementById("submit-button");
 const scoreDisplay = document.getElementById("correct");
 const scoreDisplay2 = document.getElementById("incorrect");
+const instructionsButton = document.getElementById("instructions-button");
 
 let correctGuesses = 0;
 let incorrectGuesses = 0;
+
+/**
+ * Event listeners for opening and closing Instructions area
+ */
+
+instructionsButton.addEventListener("click", () => {
+  instructionsSection.classList.remove("instructions-hidden");
+});
+
+/*openRulesBtn.addEventListener("click", () => {
+  homeArea.classList.add("hidden");
+  instructions.classList.remove("hidden");
+})*/
+
+returnHomeButton.addEventListener("click", () => {
+  instructionsSection.classList.add("instructions-hidden");
+});
 
 /**
  * Grabs a color from the predefined array to load 
@@ -51,10 +72,10 @@ function handleGuess() {
   const guessedColor = colorGuess.value.toLowerCase();
   const correctColor = setColor();
 
-/**
- * Creates a pop up message to user about result of their
- * guess and incriments the scoreboard accordingly
- */
+  /**
+   * Creates a pop up message to user about result of their
+   * guess and incriments the scoreboard accordingly
+   */
 
   if (guessedColor === correctColor) {
     /**alert("You got lucky! Play again.");*/
@@ -79,8 +100,19 @@ function handleGuess() {
 
 submitButton.addEventListener("click", handleGuess);
 
-colorGuess.addEventListener("keydown", function(event) {
+colorGuess.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     handleGuess();
+  }
+});
+
+
+/**
+ * Adds functionality to the Game Instructions button
+ */
+
+instructionsButton.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    ();
   }
 });

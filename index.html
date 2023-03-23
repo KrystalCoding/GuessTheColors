@@ -13,32 +13,90 @@
   <title>Guess the Color</title>
 </head>
 
-<body>
+<body style="background-image: url('/assets/images/pexels-cottonbro-studio-3693901\(1\).jpg'); 
+             background-size: cover;
+             background-repeat: no-repeat;">
 
-  <div class="wrapper">
+  <!--Home Page section-->
 
-  <h1 class="heading">Guess the Color</h1>
+  <div class="background-image">
+    <div class="wrapper">
 
-  <div class="game-area">
-    
-    <div id="color-box"></div>
+      <h1 class="heading">Guess the Color</h1>
+      <button id="instructions-button">Game Instructions</button>
 
-    <div class="input-area">
-      <label for="color-guess">Enter a color:</label>
-      <input type="text" id="color-guess">
-      <button id="submit-button">Submit</button>
+      <!-- Start of Game Instructions-->
+
+    <section class="instructions-hidden" id="instructions">
+      <h2>Are you psychic?</h2>
+      <h3>Can you tell the future?</h3>
+      <p>Simply type in the color you think will come next and find out if you are psychic.</p>
+      <p>The colors to choose from are as follows:</p>
+      <ul>
+        <li>red</li>
+        <li>blue</li>
+        <li>green</li>
+        <li>yellow</li>
+        <li>purple</li>
+        <li>orange</li>
+        <li>pink</li>
+        <li>brown</li>
+      </ul>
+      <button aria-label="Return Home" class="button hover" id="home-btn">Home</button>
+    </section>
+
+      <!--Start of Game Area-->
+
+      <div class="game-area">
+
+        <div id="color-box"></div>
+
+        <div class="input-area">
+          <label for="color-guess">Enter a color:</label>
+          <input type="text" id="color-guess">
+          <button id="submit-button">Submit</button>
+        </div>
+
+        <div id="result-message"></div>
+
+      </div>
+
     </div>
 
-    <div id="result-message"></div>
+    <!--Start of score Area-->
 
+    <div class="score-area">
+      <p class="scores">Correct: <span id="correct">0</span></p>
+      <p class="scores">Incorrect: <span id="incorrect">0</span></p>
+    </div>
+
+    <!--Social Media links-->
+    
+    <footer>
+      <ul class="social-networks">
+        <li>
+          <a href="https://facebook.com" target="_blank" rel="noopener"
+            aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank" rel="noopener"
+            aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="https://youtube.com" target="_blank" rel="noopener"
+            aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+        </li>
+        <li>
+          <a href="https://instagram.com" target="_blank" rel="noopener"
+            aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </footer>
   </div>
 
-  </div>
+  <!--Font Awesome and late-load JS scripts-->
 
-  <div class="score-area">
-    <p class="scores">Correct: <span id="correct">0</span></p>
-    <p class="scores">Incorrect: <span id="incorrect">0</span></p>
-  </div>
+  <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 
   <script src="assets/js/script.js"></script>
 </body>
