@@ -25,7 +25,6 @@ const colorGuess = document.getElementById("color-guess");
 const submitButton = document.getElementById("submit-button");
 const scoreDisplay = document.getElementById("correct");
 const scoreDisplay2 = document.getElementById("incorrect");
-const instructionsButton = document.getElementById("instructions-button");
 
 let correctGuesses = 0;
 let incorrectGuesses = 0;
@@ -109,10 +108,10 @@ colorGuess.addEventListener("keydown", function (event) {
 
 /**
  * Adds functionality to the Game Instructions button
- */
+ 
 
 instructionsButton.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     ();
   }
-});
+});*/
