@@ -216,37 +216,36 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper 
-  .score-area ul
-  .game-container {
-  max-width: 90%;
-  padding: 10px;
-  font-size: .8rem;
+  .wrapper .score-area ul .game-container {
+    max-width: 90%;
+    padding: 10px;
+    font-size: .8rem;
   }
-  }
+}
 
 @media screen and (max-width: 624px) {
-  .score-area li {
+  .score-area ul {
     margin-right: 0;
-    margin-bottom: 10px;
-    }
-  .wrapper 
-  .game-container {
-  max-width: 80%;
-  padding: 7px;
-  font-size: .6rem;
-  }
+    margin-bottom: 7px;
   }
 
+  .wrapper .game-container {
+    max-width: 80%;
+    padding: 7px;
+    font-size: .6rem;
+  }
+}
+
+
 @media screen and (max-width: 380px) {
-  .score-area li {
+  .score-area {
     margin-right: 0;
     margin-bottom: 5px;
-    }
-  .wrapper 
-  .game-container {
+  }
+
+  .wrapper .game-container {
     max-width: 70%;
     padding: 5px;
     font-size: .4rem;
-    }
   }
+}
