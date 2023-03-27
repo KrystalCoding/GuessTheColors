@@ -113,22 +113,10 @@ footer {
   color: blue;
 }
 
+/*
 .background-image {
   background-size: cover;
   background-position: center;
-}
-
-/*
-#instructions {
-  display: block;
-}
-
-instructions-hidden{
-  display: none;
-}
-
-#instructions-hidden.show .game-area {
-  visibility: hidden;
 }
 */
 
