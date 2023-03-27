@@ -91,7 +91,7 @@ label[for="color-guess"] {
   padding-top: 40px;
   padding-left: 10px;
   background-color: rgba(255, 192, 203, 0.432);
-  color: brown;
+  color: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +111,7 @@ label[for="color-guess"] {
   margin-right: 20px;
   font-weight: bold;
   font-size: 1rem;
+  color: brown;
 }
 
 footer {
@@ -166,6 +167,7 @@ footer {
 
 .game-instructions p {
   margin-bottom: 10px;
+  color: blue;
 }
 
 .game-instructions ul {
@@ -216,6 +218,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .score-area li,
+  .game-instructions li {
+    font-size: 0.8rem;
+  }
+
   .wrapper .score-area ul .game-container {
     max-width: 90%;
     padding: 10px;
@@ -224,6 +231,11 @@ footer {
 }
 
 @media screen and (max-width: 624px) {
+  .score-area li,
+  .game-instructions li {
+    font-size: 0.6rem;
+  }
+
   .score-area ul {
     margin-right: 0;
     margin-bottom: 7px;
@@ -238,6 +250,11 @@ footer {
 
 
 @media screen and (max-width: 380px) {
+  .score-area li,
+  .game-instructions li {
+    font-size: 0.4rem;
+  }
+
   .score-area {
     margin-right: 0;
     margin-bottom: 5px;
