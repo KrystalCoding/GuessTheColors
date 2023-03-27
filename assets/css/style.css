@@ -225,9 +225,25 @@ footer {
   }
   }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 624px) {
+  .score-area li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
   .wrapper 
-  .score-area ul
+  .game-container {
+  max-width: 80%;
+  padding: 7px;
+  font-size: .6rem;
+  }
+  }
+
+@media screen and (max-width: 380px) {
+  .score-area li {
+    margin-right: 0;
+    margin-bottom: 5px;
+    }
+  .wrapper 
   .game-container {
     max-width: 70%;
     padding: 5px;
