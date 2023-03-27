@@ -100,6 +100,19 @@ label[for="color-guess"] {
   border-radius: 10px;
 }
 
+.score-area ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.score-area li {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 footer {
   height: 150px;
 }
@@ -203,7 +216,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper .game-container {
+  .wrapper 
+  .score-area ul
+  .game-container {
   max-width: 90%;
   padding: 10px;
   font-size: .8rem;
@@ -211,7 +226,9 @@ footer {
   }
 
 @media screen and (max-width: 380px) {
-  .wrapper .game-container {
+  .wrapper 
+  .score-area ul
+  .game-container {
     max-width: 70%;
     padding: 5px;
     font-size: .4rem;
