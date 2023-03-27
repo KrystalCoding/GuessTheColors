@@ -28,71 +28,72 @@
 
       <!-- Start of Game Instructions-->
 
-    <section class="instructions-hidden" id="instructions">
-      <h2>Are you psychic?</h2>
-      <h3>Can you tell the future?</h3>
-      <p>Simply type in the color of the hidden square.</p>
-      <p>The colors to choose from are as follows:</p>
-      <ul>
-        <li>red</li>
-        <li>blue</li>
-        <li>green</li>
-        <li>yellow</li>
-        <li>purple</li>
-        <li>orange</li>
-        <li>pink</li>
-        <li>brown</li>
-      </ul>
-      <button aria-label="Return Home" id="home-btn">Home</button>
-    </section>
+      <section class="instructions-hidden" id="instructions">
+        <h2>Are you psychic?</h2>
+        <h3>Can you tell the future?</h3>
+        <p>Simply type in the color of the hidden square.</p>
+        <p>The colors to choose from are as follows:</p>
+        <ul>
+          <li>red</li>
+          <li>blue</li>
+          <li>green</li>
+          <li>yellow</li>
+          <li>purple</li>
+          <li>orange</li>
+          <li>pink</li>
+          <li>brown</li>
+        </ul>
+        <button aria-label="Return Home" id="home-btn">Play Game</button>
+      </section>
+    </div>
 
-      <!--Start of Game Area-->
+    <!--Start of Game Area-->
 
-      <div class="game-area">
 
-        <div id="color-box"></div>
+    <div id="game-container">
+    <div class="game-area">
 
-        <div class="input-area">
-          <label for="color-guess">Enter a color:</label>
-          <input type="text" id="color-guess">
-          <button id="submit-button">Submit</button>
-        </div>
+      <div id="color-box"></div>
 
-        <div id="result-message"></div>
-
+      <div class="input-area">
+        <label for="color-guess">Enter a color:</label>
+        <input type="text" id="color-guess">
+        <button id="submit-button">Submit</button>
       </div>
 
+      <div id="result-message"></div>
+
+      <!--Start of score Area-->
+
+      <div class="score-area">
+        <p class="scores">Correct: <span id="correct">0</span></p>
+        <p class="scores">Incorrect: <span id="incorrect">0</span></p>
+      </div>
     </div>
+  </div>
 
-    <!--Start of score Area-->
+  <!--Social Media links-->
 
-    <div class="score-area">
-      <p class="scores">Correct: <span id="correct">0</span></p>
-      <p class="scores">Incorrect: <span id="incorrect">0</span></p>
-    </div>
-
-    <!--Social Media links-->
-    
-    <footer>
-      <ul class="social-networks">
-        <li>
-          <a href="https://facebook.com" target="_blank" rel="noopener"
-            aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="https://twitter.com" target="_blank" rel="noopener"
-            aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-        </li>
-        <li>
-          <a href="https://youtube.com" target="_blank" rel="noopener"
-            aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-        </li>
-        <li>
-          <a href="https://instagram.com" target="_blank" rel="noopener"
-            aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
-    </footer>
+  <footer>
+    <ul class="social-networks">
+      <li>
+        <a href="https://facebook.com" target="_blank" rel="noopener"
+          aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="https://twitter.com" target="_blank" rel="noopener"
+          aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+      </li>
+      <li>
+        <a href="https://youtube.com" target="_blank" rel="noopener"
+          aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank" rel="noopener"
+          aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+  </footer>
   </div>
 
   <!--Font Awesome and late-load JS scripts-->

@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 /**
  * Defines colors to be used in the main Color game block
  */
@@ -25,24 +27,35 @@ const colorGuess = document.getElementById("color-guess");
 const submitButton = document.getElementById("submit-button");
 const scoreDisplay = document.getElementById("correct");
 const scoreDisplay2 = document.getElementById("incorrect");
+const gameContainer = document.getElementById("game-container");
+const instructionsHidden = document.getElementById("instructions-hidden");
 
 let correctGuesses = 0;
 let incorrectGuesses = 0;
 
 /**
- * Event listeners for opening and closing Instructions area
+ * Event listeners for opening and closing Instructions area*/
 
 
-instructionsButton.addEventListener("click", () => {
+instructionsButton.addEventListener("click", function () {
+  instructionsSection.classList.toggle("instructions-hidden");
+  gameContainer.classList.toggle("instructions-hidden");
+});
+
+homeButton.addEventListener("click", function () {
+  gameContainer.classList.remove("instructions-hidden");
+  instructionsHidden.classList.add("instructions-hidden");
   instructionsSection.classList.add("instructions-hidden");
 });
 
-returnHomeButton.addEventListener("click", () => {
-  instructionsSection.classList.remove("instructions-hidden");
-}); */
 
-submitButton.addEventListener("click", handleGuess);
+/*instructionsButton.addEventListener("click", function() {
+  instructionsSection.style.display = "none";
+});*/
 
+homeButton.addEventListener("click", function() {
+  instructionsSection.style.display = "block";
+});
 
 /**
  * Grabs a color from the predefined array to load 
@@ -70,7 +83,7 @@ function handleGuess() {
   const correctColor = setColor();
 
   /**
-   * Creates a pop up message to user about result of their
+   * Creates a message to user about result of their
    * guess and incriments the scoreboard accordingly
    */
 
@@ -103,19 +116,6 @@ colorGuess.addEventListener("keydown", function (event) {
   }
 });
 
-
-/**
- * Adds functionality to the Game Instructions button*/
- 
-
-instructionsButton.addEventListener("click", () => {
-  instructionsSection.classList.remove("instructions-hidden");
 });
 
-instructionsButton.addEventListener("click", function () {
-  instructionsSection.classList.remove("instructions-hidden");
-});
-
-homeButton.addEventListener("click", function () {
-  instructionsSection.classList.add("instructions-hidden");
-});
+ gameContainer.classList.add("show");

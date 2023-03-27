@@ -118,6 +118,25 @@ footer {
   background-position: center;
 }
 
+/*
+#instructions {
+  display: block;
+}
+
+instructions-hidden{
+  display: none;
+}
+
+#instructions-hidden.show .game-area {
+  visibility: hidden;
+}
+*/
+
+#instructions-hidden.show p {
+  color: white;
+  font-size: 20px;
+}
+
 .instructions-hidden {
   display: none;
 }
