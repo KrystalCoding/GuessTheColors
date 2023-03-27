@@ -19,7 +19,7 @@ const colors = [
 
 const instructionsButton = document.getElementById("instructions-button");
 const instructionsSection = document.getElementById("instructions");
-const returnHomeButton = document.getElementById("home-btn");
+const homeButton = document.getElementById("home-btn");
 const colorBox = document.getElementById("color-box");
 const colorGuess = document.getElementById("color-guess");
 const submitButton = document.getElementById("submit-button");
@@ -31,20 +31,18 @@ let incorrectGuesses = 0;
 
 /**
  * Event listeners for opening and closing Instructions area
- */
+
 
 instructionsButton.addEventListener("click", () => {
-  instructionsSection.classList.remove("instructions-hidden");
-});
-
-/*openRulesBtn.addEventListener("click", () => {
-  homeArea.classList.add("hidden");
-  instructions.classList.remove("hidden");
-})*/
-
-returnHomeButton.addEventListener("click", () => {
   instructionsSection.classList.add("instructions-hidden");
 });
+
+returnHomeButton.addEventListener("click", () => {
+  instructionsSection.classList.remove("instructions-hidden");
+}); */
+
+submitButton.addEventListener("click", handleGuess);
+
 
 /**
  * Grabs a color from the predefined array to load 
@@ -107,11 +105,17 @@ colorGuess.addEventListener("keydown", function (event) {
 
 
 /**
- * Adds functionality to the Game Instructions button
+ * Adds functionality to the Game Instructions button*/
  
 
-instructionsButton.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    ();
-  }
-});*/
+instructionsButton.addEventListener("click", () => {
+  instructionsSection.classList.remove("instructions-hidden");
+});
+
+instructionsButton.addEventListener("click", function () {
+  instructionsSection.classList.remove("instructions-hidden");
+});
+
+homeButton.addEventListener("click", function () {
+  instructionsSection.classList.add("instructions-hidden");
+});

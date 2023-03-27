@@ -117,3 +117,7 @@ footer {
   background-size: cover;
   background-position: center;
 }
+
+.instructions-hidden {
+  display: none;
+}
