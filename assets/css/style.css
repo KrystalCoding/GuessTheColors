@@ -33,7 +33,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 50%;
+  width: 100%;
 }
 
 #color-box {
@@ -54,7 +54,7 @@ h3 {
 }
 
 label[for="color-guess"] {
-  color: red;
+  color: blue;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -68,6 +68,7 @@ label[for="color-guess"] {
   font-size: 1.5rem;
   font-weight: bold;
   height: 50px;
+  cursor: pointer;
 }
 
 #submit-button:hover {
@@ -82,8 +83,11 @@ label[for="color-guess"] {
 
 .score-area {
   font-size: 2rem;
-  width: 100%;
+  width: 70%;
   height: 200px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid black;
   padding-top: 40px;
   padding-left: 10px;
   background-color: rgba(255, 192, 203, 0.432);
@@ -92,6 +96,8 @@ label[for="color-guess"] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
 }
 
 footer {
@@ -113,18 +119,93 @@ footer {
   color: blue;
 }
 
-/*
-.background-image {
-  background-size: cover;
-  background-position: center;
-}
-*/
-
-#instructions-hidden.show p {
-  color: white;
-  font-size: 20px;
-}
-
 .instructions-hidden {
   display: none;
 }
+
+.instructions-hidden {
+  background-color: rgba(255, 192, 203, 0.432);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 70%;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.instructions-hidden h2 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: purple;
+}
+
+.instructions-hidden h3 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+.instructions-hidden p {
+  margin-bottom: 10px;
+}
+
+.instructions-hidden ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.instructions-hidden li {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+#home-btn {
+  background-color: green;
+  color: orange;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#home-btn:hover {
+  background-color: yellow;
+}
+
+#instructions-button {
+  background-color: green;
+  color: orange;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+#instructions-button:hover {
+  background-color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  .instructions-hidden {
+  max-width: 90%;
+  padding: 10px;
+  font-size: .8rem;
+  }
+  }
