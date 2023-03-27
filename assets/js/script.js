@@ -28,30 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const scoreDisplay = document.getElementById("correct"); // Grab the element for displaying the user's correct guess count
   const scoreDisplay2 = document.getElementById("incorrect"); // Grab the element for displaying the user's incorrect guess count
   const gameContainer = document.getElementById("game-container"); // Grab the container for the game section
-  const instructionsHidden = document.getElementById("instructions-hidden"); // Grab the element containing the "hidden" class
-
+ 
+ 
   //Displays initial guesses as 0
   let correctGuesses = 0;
   let incorrectGuesses = 0;
 
+
+  instructionsSection.classList.add("hide"); // Add the hide class to hide the instructions on initial page load
+
   /**
    * Event listeners for opening and closing Instructions area
-   */
+  */
 
-  instructionsButton.addEventListener("click", function () {
-    instructionsSection.classList.toggle("instructions-hidden"); // Toggle the class to show/hide the instructions section
-    gameContainer.classList.toggle("instructions-hidden"); // Toggle the class to show/hide the game section
-  });
+instructionsButton.addEventListener('click', function() {
+  instructionsSection.style.display = 'block';
+});
 
-  homeButton.addEventListener("click", function () {
-    gameContainer.classList.remove("instructions-hidden"); // Remove the class to show the game section
-    instructionsHidden.classList.add("instructions-hidden"); // Add the class to hide the hidden intructions
-    instructionsSection.classList.add("instructions-hidden"); // Add the class to hide the instructions section
-  });
-
-  homeButton.addEventListener("click", function () {
-    instructionsSection.style.display = "block"; // Show the instructions section
-  });
+homeButton.addEventListener('click', function() {
+  instructionsSection.style.display = 'none';
+});
 
   // Grabs a color from the predefined array to load into css colorbox
   function generateRandomColor() {
@@ -95,6 +91,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-
-// This line of code adds the "show" class to the gameContainer, which displays it on the page.
-gameContainer.classList.add("show");

@@ -119,11 +119,7 @@ footer {
   color: blue;
 }
 
-.instructions-hidden {
-  display: none;
-}
-
-.instructions-hidden {
+.game-instructions {
   background-color: rgba(255, 192, 203, 0.432);
   border-radius: 10px;
   padding: 20px;
@@ -140,7 +136,7 @@ footer {
   flex-direction: column;
 }
 
-.instructions-hidden h2 {
+.game-instructions h2 {
   font-family: 'Righteous', sans-serif;
   font-size: 3rem;
   margin-top: 0;
@@ -148,25 +144,25 @@ footer {
   color: purple;
 }
 
-.instructions-hidden h3 {
+.game-instructions h3 {
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 20px;
   color: orange;
 }
 
-.instructions-hidden p {
+.game-instructions p {
   margin-bottom: 10px;
 }
 
-.instructions-hidden ul {
+.game-instructions ul {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.instructions-hidden li {
+.game-instructions li {
   margin-right: 20px;
   font-weight: bold;
 }
@@ -202,10 +198,22 @@ footer {
   background-color: yellow;
 }
 
+.game-instructions {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .instructions-hidden {
+  .wrapper .game-container {
   max-width: 90%;
   padding: 10px;
   font-size: .8rem;
   }
+  }
+
+@media screen and (max-width: 380px) {
+  .wrapper .game-container {
+    max-width: 70%;
+    padding: 5px;
+    font-size: .4rem;
+    }
   }
