@@ -1,3 +1,5 @@
+/* Global styles */
+
 * {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
@@ -5,12 +7,16 @@
   padding: 0;
 }
 
+/* Wrapper div styles */
+
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
+
+/* Header text styles */
 
 .heading {
   font-family: 'Righteous', sans-serif;
@@ -20,6 +26,8 @@
   color: blue;
 }
 
+/* Subheading styles */
+
 h3 {
   font-family: 'Righteous', sans-serif;
   text-align: center;
@@ -28,110 +36,27 @@ h3 {
   color: purple;
 }
 
-.game-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-}
+/* Game Instructions clickable button styles */
 
-#color-box {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-#color-guess {
-  margin: 1rem;
-  font-weight: bold;
-  color: purple;
-  font-size: 1.8rem;
-  height: 2.5rem;
-  width: 10rem;
-  padding: 0.5rem;
-}
-
-label[for="color-guess"] {
-  color: blue;
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-#submit-button {
-  padding: 0.5rem 1.5rem;
-  border-radius: 15px;
+#instructions-button {
   background-color: green;
   color: orange;
-  font-size: 1.5rem;
-  font-weight: bold;
-  height: 50px;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
   cursor: pointer;
+  width: 50%
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
 }
 
-#submit-button:hover {
+#instructions-button:hover {
   background-color: yellow;
 }
 
-#result-message {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.score-area {
-  font-size: 2rem;
-  width: 70%;
-  height: 200px;
-  margin-left: 20px;
-  padding: 10px;
-  border: 1px solid black;
-  padding-top: 40px;
-  padding-left: 10px;
-  background-color: rgba(255, 192, 203, 0.432);
-  color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.score-area ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.score-area li {
-  margin-right: 20px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: brown;
-}
-
-footer {
-  height: 150px;
-}
-
-.social-networks {
-  text-align: center;
-}
-
-.social-networks>li {
-  display: inline;
-}
-
-.social-networks i {
-  font-size: 160%;
-  margin: 1%;
-  padding: 5%;
-  color: blue;
-}
+/* Hidden instructions div styles */
 
 .game-instructions {
   background-color: rgba(255, 192, 203, 0.432);
@@ -149,6 +74,8 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
+/* Game instructions text styles */
 
 .game-instructions h2 {
   font-family: 'Righteous', sans-serif;
@@ -170,6 +97,8 @@ footer {
   color: blue;
 }
 
+/* Game instructions list of color options available to be guessed by user styles */
+
 .game-instructions ul {
   list-style: none;
   display: flex;
@@ -181,6 +110,8 @@ footer {
   margin-right: 20px;
   font-weight: bold;
 }
+
+/* Play Game button contained within Instructions div styles */
 
 #home-btn {
   background-color: green;
@@ -196,26 +127,137 @@ footer {
   background-color: yellow;
 }
 
-#instructions-button {
-  background-color: green;
-  color: orange;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  width: 400px;
-  margin: 0 auto;
-  display: block;
-}
-
-#instructions-button:hover {
-  background-color: yellow;
-}
+/* Initially hides Instructions area until button click */
 
 .game-instructions {
   display: none;
 }
+
+/* Game div container styles */
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+/* Game box display styles */
+
+#color-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* User guess input styles */
+
+#color-guess {
+  margin: 1rem;
+  font-weight: bold;
+  color: purple;
+  font-size: 1.8rem;
+  height: 2.5rem;
+  width: 10rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+/* Directional label for user input styles */
+
+label[for="color-guess"] {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Game submit button styles */
+
+#submit-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  background-color: green;
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 50px;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  background-color: yellow;
+}
+
+/* Feedback to user styles */
+
+#result-message {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Score area container styles */
+
+.score-area {
+  font-size: 2rem;
+  width: 70%;
+  height: 200px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  padding-top: 40px;
+  padding-left: 10px;
+  background-color: rgba(255, 192, 203, 0.432);
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Score area color options available to be guessed by user styles */
+
+.score-area ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.score-area li {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: brown;
+}
+
+/* Social network link icon styles */
+
+footer {
+  height: 150px;
+}
+
+.social-networks {
+  text-align: center;
+}
+
+.social-networks>li {
+  display: inline;
+}
+
+.social-networks i {
+  font-size: 160%;
+  margin: 1%;
+  padding: 5%;
+  color: blue;
+}
+
+/* Creates design responsiveness for screen sizes 768px or smaller */
 
 @media screen and (max-width: 768px) {
   .score-area li,
@@ -236,6 +278,8 @@ footer {
   }
 }
 
+/* Creates design responsiveness for screen sizes 624px or smaller */
+
 @media screen and (max-width: 624px) {
   .score-area li,
   .game-instructions li {
@@ -254,6 +298,7 @@ footer {
   }
 }
 
+/* Creates design responsiveness for screen sizes 380px or smaller */
 
 @media screen and (max-width: 380px) {
   .score-area li,
