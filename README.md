@@ -3,21 +3,21 @@
 Welcome to my second project for [Code Institute's](https://codeinstitute.net) Full Stack Development 
 Educational Program!
 
-[Click to view](https://krystalcoding.github.io/GuessTheColors/) my website with fully interactive design.
+[Click to view](https://krystalcoding.github.io/GuessTheColors/) my website with a fully interactive design.
 
-Guess the Colors is a simple, but interactive game designed for webpages shown on different screen sizes. The First impression is a colorful, simple, and lighthearted game where the User can click a button to see intructions on how to play (simply type in the next color of the color square), and provides the color options which can be chosen, resulting in a correct or incorrect incremental score.
+Guess the Colors is a simple, but interactive game designed for web pages shown on different screen sizes. The First impression is a colorful, simple, and lighthearted game where the User can click a button to see instructions on how to play (simply type in the next color of the color square), and provides the color options which can be chosen, resulting in a correct or incorrect incremental score.
 
-However, there is a deeper meaning at play (...get it? ...play?): there is no winning. No matter how clever a person is with their guesses, they will fall further and further behind the longer they play. It is, ultimately, a disguised lesson for the futility of trying to plan ahead, while not really being able to predict the future. We must try, in order to play, but the odds are against getting ahead based on anything but pure luck.
+However, there is a deeper meaning at play (...get it? ...play?): there is no winning. No matter how clever a person is with their guesses, they will fall further and further behind the longer they play. It is, ultimately, a disguised lesson for the futility of trying to plan ahead, while unable to predict the future. We must try, to play, but the odds are against getting ahead based on anything but pure luck.
 
-Users of this web page will be able to find all the information they need about how the functionality works, colorful and lighthearted design with the clickable buttons, a background picture meant to inspire, and links to the creator's social media.
+Users of this web page will be able to find all the information they need about how the functionality works, a colorful and lighthearted design with clickable buttons, a background picture meant to inspire, and links to the creator's social media.
 
 ![Responsive web design screenshot](assets/images/PP2_AmIResponsive.png)
 
 ## Features
 - Navigation
-    - At the top of the pages, the navigation bar displays h1 text on the left side. SHY DOG-OWNERS CLUB on the home page, GET SOCIAL on the images page, and SIGN UP FOR MEETUPS on the sign-up page all link to the top of the home page.
-    - At the top of the pages, the navigation bar shows other navigation links on the right side. Home, Images, Sign Up all link to their associated sections on the same site.
-    - The navigation text are in Lato and Oswald fonts, and the color contrasts with the background.
+    - At the top of the pages, the navigation bar displays h1 text on the left side. SHY DOG-OWNERS CLUB on the home page, GET SOCIAL on the images page and SIGN UP FOR MEETUPS on the sign-up page all link to the top of the home page.
+    - At the top of the pages, the navigation bar shows other navigation links on the right side. Home, Images, and Sign Up all link to their associated sections on the same site.
+    - The navigation text is in Lato and Oswald fonts, and the color contrasts with the background.
     - The navigation displays the Club name and info about the page the user is on, and makes navigating the information intuitive.
 
 ![screenshot of header on home page](assets/images/Social-Dog-Header.png)
@@ -50,12 +50,12 @@ Users of this web page will be able to find all the information they need about 
 
 - Images
     - When the navigation link titled Images is clicked, it leads to the page containing a responsive grid of inspirational photos.
-    - The purpose of these photos is to ease the user by letting them know their experience of owning a shy dog is understood and shared by other people. It is also mean to inspire action to join the meet ups.
+    - The purpose of these photos is to ease the user by letting them know their experience of owning a shy dog is understood and shared by other people. It is also meant to inspire action to join the meet-ups.
 
 ![images grid screenshot](assets/images/images-screenshot.png)
 
 - Sign Up Form
-    - When the navigation link titled Sign Up is clicked, it leads to the page containing the sign up form. 
+    - When the navigation link titled Sign Up is clicked, it leads to the page containing the sign-up form. 
     - The purpose of this form is to gather information on which meet ups the user is interested in joining.
     -The sign up form consists of:
         - A header, LET'S GET YOU SIGNED UP!
@@ -68,38 +68,53 @@ Users of this web page will be able to find all the information they need about 
 ## Testing
 
 ### Bugs
-- There were no notiable bugs to fix in this very simple webpage game design.
+- There were no notable bugs to fix in this very simple webpage game design.
 
 ### Validator Testing
+
+| Validator     | Pass | Fail     |
+| :---        |    :----:   | :----: |
+| HTML      | X       | 0   |
+| CSS   | X         | 0      |
+| JavaScript      | X        | 0   |
+| Lighthouse   | X         | 0      |
+| Grammarly      | X        | 0   |
+
 - HTML
-    - The html code was validated and cleared via [W3C HTML Validator](https://validator.w3.org/#validate_by_input).
+    - The HTML code was validated and cleared via [W3C HTML Validator](https://validator.w3.org/#validate_by_input).
 ![photo proof of w3 html validation](assets/images/PP2_w3.png)
 - CSS
     - The CSS code was validated and cleared via [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/).
-![photo proof of w3 css validation](assets/images/PP2_w3_CSS.png)    
+![photo proof of w3 css validation](assets/images/PP2_w3_CSS.png)
+- JavaScript 
+    - My JavaScript code was validated by [JSHint](https://jshint.com/)
+![photo proof of JSHint validation](assets/images/PP2_JSHint.png)
 - Accessibility
     - I confirmed that the color palette and fonts are easily accessible by using [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fkrystalcoding.github.io%2Fantisocial-dog-meetups%2F&form_factor=desktop) in devtools.
 ![photo proof of accessibility score](assets/images/PP2_Lighthouse.png)
+-Grammar 
+    - Grammer in README.md was checked on [Grammarly](https://app.grammarly.com/)
 
 ### Unfixed Bugs/Flaws
-- In the future, for best use of this game, I will make a max-score which ends in a win/lose scenario.
+- In the future, as it is very unlikely the deeper philosophical nature of this faux-game will be fully appreciated, I will make a max-score that ends in a win/lose scenario.
 - I would like to, in time, create a function for the Game Area to disappear when the Game Instructions area is visible.
 
 ## Deployment
 - The Club's Website was deployed using GitHub pages. The steps to deploy are the following:
     - From the [GitHub repository](https://github.com/KrystalCoding/GuessTheColors), navigate to the Settings tab.
-    - On the left hand side, scroll down to the navigation link titled Pages.
+    - On the left-hand side, scroll down to the navigation link titled Pages.
     - From the branch source drop-down menu, select the option Master.
     - When the page was refreshed, the link for deployment was provided.
 Once again, the live link can be found here: [Guess the Colors Game](https://krystalcoding.github.io/GuessTheColors/).
 
+
 ## Credit
 
 ### Content
-- The code to design the interactivity, format the social media footer, was inspired by the [Love Maths](https://github.com/KrystalCoding/love-maths) Project with tutorial videos by [The Code Institute](https://codeinstitute.net). Assistance from tutors at the Institute was also utilized for image responsiveness.
-- Resource [W3 Schools](https://www.w3schools.com/js/) was used in assiting to create the interactivity of the hidden sections.
+- The code to design the interactivity, and format the social media footer, was inspired by the [Love Maths](https://github.com/KrystalCoding/love-maths) Project with tutorial videos by [The Code Institute](https://codeinstitute.net). Assistance from tutors at the Institute was also utilized for image responsiveness.
+- Resource [W3 Schools](https://www.w3schools.com/js/) was used in assisting to create the interactivity of the hidden sections.
 - [GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images) provided the basic writing and syntax used in this README.md file.
-- [Am I Responsive](https://ui.dev/amiresponsive?url=https://krystalcoding.github.io/antisocial-dog-meetups/) was responsible for creating the responsive design photo used in the beginning of this README.md.
+- [Am I Responsive](https://ui.dev/amiresponsive?url=https://krystalcoding.github.io/antisocial-dog-meetups/) was responsible for creating the responsive design photo used at the beginning of this README.md.
 
 ### Media
 - The background image was all borrowed from [Pexels](https://www.pexels.com/).
