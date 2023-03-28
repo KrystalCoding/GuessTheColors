@@ -76,14 +76,14 @@ Users of this web page will be able to find all the information they need about 
     - The CSS code was validated and cleared via [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/).
 ![photo proof of w3 css validation](assets/images/PP2_w3_CSS.png)
 - JavaScript 
-    - My JavaScript code was validated by [JSHint](https://jshint.com/)
+    - My JavaScript code was validated by [JSHint](https://jshint.com/).
 ![photo proof of JSHint validation](assets/images/PP2_JSHint.png)
 - Accessibility
     - I confirmed that the color palette and fonts are easily accessible by using [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fkrystalcoding.github.io%2Fantisocial-dog-meetups%2F&form_factor=desktop) in devtools.
 ![photo proof of accessibility score](assets/images/PP2_Lighthouse.png)
 -Grammar 
-    - Grammer in README.md was checked on [Grammarly](https://app.grammarly.com/)
-.
+    - Grammer in README.md was checked on [Grammarly](https://app.grammarly.com/).
+
 ### Unfixed Bugs/Flaws
 - In the future, as it is very unlikely the deeper philosophical nature of this faux-game will be fully appreciated, I will make a max-score that ends in a win/lose scenario.
 - I would like to, in time, create a function for the Game Area to disappear when the Game Instructions area is visible.
