@@ -1,3 +1,9 @@
+body {
+  background-image: url("assets/images/background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
 /* Global styles */
 
 * {
@@ -260,6 +266,7 @@ footer {
 /* Creates design responsiveness for screen sizes 768px or smaller */
 
 @media screen and (max-width: 768px) {
+
   .score-area li,
   .game-instructions li {
     font-size: 0.8rem;
@@ -269,7 +276,7 @@ footer {
     margin: 0 auto;
     width: 80%;
     max-width: 10rem;
-  }  
+  }
 
   .wrapper .score-area ul .game-container {
     max-width: 90%;
@@ -281,6 +288,7 @@ footer {
 /* Creates design responsiveness for screen sizes 624px or smaller */
 
 @media screen and (max-width: 624px) {
+
   .score-area li,
   .game-instructions li {
     font-size: 0.8rem;
@@ -301,6 +309,7 @@ footer {
 /* Creates design responsiveness for screen sizes 380px or smaller */
 
 @media screen and (max-width: 380px) {
+
   .score-area li,
   .game-instructions li {
     font-size: 0.6rem;
