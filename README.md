@@ -73,13 +73,13 @@ Users of this web page will be able to find all the information they need about 
 ### Validator Testing
 - HTML
     - The html code was validated and cleared via [W3C HTML Validator](https://validator.w3.org/#validate_by_input).
-![photo proof of w3 html validation](/assets/images/PP2_w3.png)
+![photo proof of w3 html validation](assets/images/PP2_w3.png)
 - CSS
     - The CSS code was validated and cleared via [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/).
-![photo proof of w3 css validation](/assets/images/PP2_w3_CSS.png)    
+![photo proof of w3 css validation](assets/images/PP2_w3_CSS.png)    
 - Accessibility
     - I confirmed that the color palette and fonts are easily accessible by using [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fkrystalcoding.github.io%2Fantisocial-dog-meetups%2F&form_factor=desktop) in devtools.
-![photo proof of accessibility score](/assets/images/PP2_Lighthouse.png)
+![photo proof of accessibility score](assets/images/PP2_Lighthouse.png)
 
 ### Unfixed Bugs/Flaws
 - In the future, for best use of this game, I will make a max-score which ends in a win/lose scenario.
