@@ -16,8 +16,8 @@ Users of this web page will be able to find all the information they need about 
 ## Features
 - Navigation
     - The Header at the top of the home page displays the name of the game "Guess the Color".
-    - Just underneath the header is a clickable button the user can click to find reveal and find out the Game Instructions.
-    - After making a guess, there is a large, central color box which displays the color the user was attempting to guess.
+    - Just underneath the header is a clickable button the user can click to reveal the Game Instructions.
+    - After making a guess, there is a large, central color box that displays the color the user was attempting to guess.
     - Beneath the color box is the label for a text box where the user can enter their guess for what the mystery color will be revealed as.
     - Underneath the Guess box and Submit button is the score box to tally the correct and incorrect guesses, along with the color options the user has to guess from.
     - Finally is a footer with links to social media pages.
@@ -25,20 +25,20 @@ Users of this web page will be able to find all the information they need about 
 ![screenshot of home page](assets/images/PP2_Homepage.png)
 
 - Game Instructions
-    - The Game Instructions button has a clickable functionality which reveals the rules of the game for the user.
+    - The Game Instructions button has a clickable functionality that reveals the rules of the game for the user.
     - Contained within this section is a button to again hide the Instructions and return to the home page containing primarily the Game Area with the functions to play the game.
 
 ![Game Instructions screenshot](assets/images/PP2_GameInstructions.png)
 
 - Game Area
-    - The Game Area contains the functionality of game play. There is a color box, initially hidden, which after the user enters a guess (either by using the "Enter" key or clicking the "Submit" button with mouse pointer) is revealed in the bold color the user was attempting to guess.
+    - The Game Area contains the functionality of gameplay. There is a color box, initially hidden, which after the user enters a guess (either by using the "Enter" key or clicking the "Submit" button with a mouse pointer) is revealed in the bold color the user was attempting to guess.
     - Beneath the text box is a message telling the user what the correct color was all along, whether or not they guessed correctly.
 
 ![Game Area screenshot](assets/images/PP2_CorrectGuess.png)
 ![Game Area screenshot](assets/images/PP2_IncorrectGuess.png)
 
 - Score Area
-    - In the space below the game section is the area which displays the color options the user has to type into the text box. They may type in whatever they please, but only one of the color options presented has a chance of being correct.
+    - In the space below the game section is the area that displays the color options the user has to type into the text box. They may type in whatever they please, but only one of the color options presented has a chance of being correct.
     - That same section contains the correct and incorrect scores. It is incremented by one point with each right or wrong answer.
 
 ![Score Area screenshot](assets/images/PP2_ScoreArea.png)
@@ -50,7 +50,7 @@ Users of this web page will be able to find all the information they need about 
 
 
 - Design Considerations
-    - The colorful and choice for both background image and font and game box colors were meant to convey a lighthearted and happy game. This was done both in order to draw in the user and entice them to play the game (much like the game of life), and also to contrast with the more sinister trap of never being able to win the game.
+    - The color scheme choice for both the background image and font and game box colors were meant to convey a lighthearted and happy game. This was done both to draw in the user and entice them to play the game (much like the game of life), and also to contrast with the more sinister trap of never being able to win the game.
     - The fonts of Raleway and Righteous, as well as the bright colors for the text were chosen for these same reasons. They appear as a childlike game, soft around the edges and easy to read even on small screens.
     - Layout was designed in the simplest way possible, easy for the user to navigate and quickly understand the features available.
 
@@ -83,7 +83,7 @@ Users of this web page will be able to find all the information they need about 
 ![photo proof of accessibility score](assets/images/PP2_Lighthouse.png)
 -Grammar 
     - Grammer in README.md was checked on [Grammarly](https://app.grammarly.com/)
-
+.
 ### Unfixed Bugs/Flaws
 - In the future, as it is very unlikely the deeper philosophical nature of this faux-game will be fully appreciated, I will make a max-score that ends in a win/lose scenario.
 - I would like to, in time, create a function for the Game Area to disappear when the Game Instructions area is visible.
