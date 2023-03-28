@@ -15,55 +15,44 @@ Users of this web page will be able to find all the information they need about 
 
 ## Features
 - Navigation
-    - At the top of the pages, the navigation bar displays h1 text on the left side. SHY DOG-OWNERS CLUB on the home page, GET SOCIAL on the images page and SIGN UP FOR MEETUPS on the sign-up page all link to the top of the home page.
-    - At the top of the pages, the navigation bar shows other navigation links on the right side. Home, Images, and Sign Up all link to their associated sections on the same site.
-    - The navigation text is in Lato and Oswald fonts, and the color contrasts with the background.
-    - The navigation displays the Club name and info about the page the user is on, and makes navigating the information intuitive.
+    - The Header at the top of the home page displays the name of the game "Guess the Color".
+    - Just underneath the header is a clickable button the user can click to find reveal and find out the Game Instructions.
+    - After making a guess, there is a large, central color box which displays the color the user was attempting to guess.
+    - Beneath the color box is the label for a text box where the user can enter their guess for what the mystery color will be revealed as.
+    - Underneath the Guess box and Submit button is the score box to tally the correct and incorrect guesses, along with the color options the user has to guess from.
+    - Finally is a footer with links to social media pages.
 
-![screenshot of header on home page](assets/images/Social-Dog-Header.png)
-![screenshot of header on images page](assets/images/get-social-header.png)
-![screenshot of header on sign up page](assets/images/sign-up-header.png)
+![screenshot of home page](assets/images/PP2_Homepage.png)
 
-- The Banner
-    - The banner displays the purpose of the club, which is to meet up with other dog owners, and continues with the color scheme and fonts.
-    - The banner advertises the locations in which the meet ups are to be held.
+- Game Instructions
+    - The Game Instructions button has a clickable functionality which reveals the rules of the game for the user.
+    - Contained within this section is a button to again hide the Instructions and return to the home page containing primarily the Game Area with the functions to play the game.
 
-![banner on home page screenshot](assets/images/banner-remade-screenshot.png)
+![Game Instructions screenshot](assets/images/PP2_GameInstructions.png)
 
-- Club Ethos
-    - The ethos section displays the purpose and aspirations of the club, answering its own question: WHY SOCIAL SETTINGS FOR ANTISOCIAL DOGS?
-    -The four sections of the ethos display as follows: COMMUNITY, GET ACTIVE, MINDSET, GET SOCIAL. These each explain in detail the purpose and benefits of joining such a community club.
+- Game Area
+    - The Game Area contains the functionality of game play. There is a color box, initially hidden, which after the user enters a guess (either by using the "Enter" key or clicking the "Submit" button with mouse pointer) is revealed in the bold color the user was attempting to guess.
+    - Beneath the text box is a message telling the user what the correct color was all along, whether or not they guessed correctly.
 
-![club ethos section screenshot](assets/images/club-ethos-screenshot.png)
+![Game Area screenshot](assets/images/PP2_CorrectGuess.png)
+![Game Area screenshot](assets/images/PP2_IncorrectGuess.png)
 
-- Logistics
-    - At the bottom of the home page, there are 5 sections containing information about meet up times and locations.
-    - The three types of section headings, TRAIL WALKING, AFTER-WORK, and DOG PARK clearly communicate to the user the theme of the meet ups.
-    - Each section in the logistics section contain days of the week, times of day, and locations for the intended meet up.
+- Score Area
+    - In the space below the game section is the area which displays the color options the user has to type into the text box. They may type in whatever they please, but only one of the color options presented has a chance of being correct.
+    - That same section contains the correct and incorrect scores. It is incremented by one point with each right or wrong answer.
 
-![logistics section screenshot](assets/images/logistics-screenshot.png)
+![Score Area screenshot](assets/images/PP2_ScoreArea.png)
 
 - Footer
-    - The footer section, identical at the bottom of each page, display four different icons in the color theme. When clicked, they are working links to what would be the Club's Facebook, Twitter, YouTube, and Instagram accounts.
+    - The footer section displays four different icons in the color theme. When clicked, they are working links to what would be the Club's Facebook, Twitter, YouTube, and Instagram accounts.
 
-![footer with social media icons screenshot](assets/images/footer-screenshot.png)
+![footer with social media icons screenshot](assets/images/PP2_SocialMedia.png)
 
-- Images
-    - When the navigation link titled Images is clicked, it leads to the page containing a responsive grid of inspirational photos.
-    - The purpose of these photos is to ease the user by letting them know their experience of owning a shy dog is understood and shared by other people. It is also meant to inspire action to join the meet-ups.
 
-![images grid screenshot](assets/images/images-screenshot.png)
-
-- Sign Up Form
-    - When the navigation link titled Sign Up is clicked, it leads to the page containing the sign-up form. 
-    - The purpose of this form is to gather information on which meet ups the user is interested in joining.
-    -The sign up form consists of:
-        - A header, LET'S GET YOU SIGNED UP!
-        - Three input boxes with labels for First Name, Last Name, and Email Address.
-        - Three radio button options labeled Granby, Stabby, and Pub to indicate which meet up the user is interested in joining.
-        - A Submit button with the text Get Social!
-
-![sign up form with background image screenshot](assets/images/sign-up-form-screenshot.png)
+- Design Considerations
+    - The colorful and choice for both background image and font and game box colors were meant to convey a lighthearted and happy game. This was done both in order to draw in the user and entice them to play the game (much like the game of life), and also to contrast with the more sinister trap of never being able to win the game.
+    - The fonts of Raleway and Righteous, as well as the bright colors for the text were chosen for these same reasons. They appear as a childlike game, soft around the edges and easy to read even on small screens.
+    - Layout was designed in the simplest way possible, easy for the user to navigate and quickly understand the features available.
 
 ## Testing
 
@@ -74,11 +63,11 @@ Users of this web page will be able to find all the information they need about 
 
 | Validator     | Pass | Fail     |
 | :---        |    :----:   | :----: |
-| HTML      | X       | 0   |
-| CSS   | X         | 0      |
-| JavaScript      | X        | 0   |
-| Lighthouse   | X         | 0      |
-| Grammarly      | X        | 0   |
+| HTML      | &check;       | 0   |
+| CSS   | &check;        | 0      |
+| JavaScript      | &check;        | 0   |
+| Lighthouse   | &check;         | 0      |
+| Grammarly      | &check;       | 0   |
 
 - HTML
     - The HTML code was validated and cleared via [W3C HTML Validator](https://validator.w3.org/#validate_by_input).
