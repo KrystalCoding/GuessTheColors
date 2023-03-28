@@ -1,108 +1,106 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Guess the Color Game
 
-Welcome KrystalCoding,
+Welcome to my second project for [Code Institute's](https://codeinstitute.net) Full Stack Development 
+Educational Program!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Click to view](https://krystalcoding.github.io/GuessTheColors/) my website with fully interactive design.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Guess the Colors is a simple, but interactive game designed for webpages shown on different screen sizes. The First impression is a colorful, simple, and lighthearted game where the User can click a button to see intructions on how to play (simply type in the next color of the color square), and provides the color options which can be chosen, resulting in a correct or incorrect incremental score.
 
-## Gitpod Reminders
+However, there is a deeper meaning at play (...get it? ...play?): there is no winning. No matter how clever a person is with their guesses, they will fall further and further behind the longer they play. It is, ultimately, a disguised lesson for the futility of trying to plan ahead, while not really being able to predict the future. We must try, in order to play, but the odds are against getting ahead based on anything but pure luck.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Users of this web page will be able to find all the information they need about how the functionality works, colorful and lighthearted design with the clickable buttons, a background picture meant to inspire, and links to the creator's social media.
 
-`python3 -m http.server`
+![Responsive web design screenshot](assets/images/PP2_AmIResponsive.png)
 
-A blue button should appear to click: _Make Public_,
+## Features
+- Navigation
+    - At the top of the pages, the navigation bar displays h1 text on the left side. SHY DOG-OWNERS CLUB on the home page, GET SOCIAL on the images page, and SIGN UP FOR MEETUPS on the sign-up page all link to the top of the home page.
+    - At the top of the pages, the navigation bar shows other navigation links on the right side. Home, Images, Sign Up all link to their associated sections on the same site.
+    - The navigation text are in Lato and Oswald fonts, and the color contrasts with the background.
+    - The navigation displays the Club name and info about the page the user is on, and makes navigating the information intuitive.
 
-Another blue button should appear to click: _Open Browser_.
+![screenshot of header on home page](assets/images/Social-Dog-Header.png)
+![screenshot of header on images page](assets/images/get-social-header.png)
+![screenshot of header on sign up page](assets/images/sign-up-header.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- The Banner
+    - The banner displays the purpose of the club, which is to meet up with other dog owners, and continues with the color scheme and fonts.
+    - The banner advertises the locations in which the meet ups are to be held.
 
-A blue button should appear to click: _Make Public_,
+![banner on home page screenshot](assets/images/banner-remade-screenshot.png)
 
-Another blue button should appear to click: _Open Browser_.
+- Club Ethos
+    - The ethos section displays the purpose and aspirations of the club, answering its own question: WHY SOCIAL SETTINGS FOR ANTISOCIAL DOGS?
+    -The four sections of the ethos display as follows: COMMUNITY, GET ACTIVE, MINDSET, GET SOCIAL. These each explain in detail the purpose and benefits of joining such a community club.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![club ethos section screenshot](assets/images/club-ethos-screenshot.png)
 
-To log into the Heroku toolbelt CLI:
+- Logistics
+    - At the bottom of the home page, there are 5 sections containing information about meet up times and locations.
+    - The three types of section headings, TRAIL WALKING, AFTER-WORK, and DOG PARK clearly communicate to the user the theme of the meet ups.
+    - Each section in the logistics section contain days of the week, times of day, and locations for the intended meet up.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![logistics section screenshot](assets/images/logistics-screenshot.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Footer
+    - The footer section, identical at the bottom of each page, display four different icons in the color theme. When clicked, they are working links to what would be the Club's Facebook, Twitter, YouTube, and Instagram accounts.
 
-------
+![footer with social media icons screenshot](assets/images/footer-screenshot.png)
 
-## Release History
+- Images
+    - When the navigation link titled Images is clicked, it leads to the page containing a responsive grid of inspirational photos.
+    - The purpose of these photos is to ease the user by letting them know their experience of owning a shy dog is understood and shared by other people. It is also mean to inspire action to join the meet ups.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![images grid screenshot](assets/images/images-screenshot.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- Sign Up Form
+    - When the navigation link titled Sign Up is clicked, it leads to the page containing the sign up form. 
+    - The purpose of this form is to gather information on which meet ups the user is interested in joining.
+    -The sign up form consists of:
+        - A header, LET'S GET YOU SIGNED UP!
+        - Three input boxes with labels for First Name, Last Name, and Email Address.
+        - Three radio button options labeled Granby, Stabby, and Pub to indicate which meet up the user is interested in joining.
+        - A Submit button with the text Get Social!
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![sign up form with background image screenshot](assets/images/sign-up-form-screenshot.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Testing
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Bugs
+- There were no notiable bugs to fix in this very simple webpage game design.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Validator Testing
+- HTML
+    - The html code was validated and cleared via [W3C HTML Validator](https://validator.w3.org/#validate_by_input).
+![photo proof of w3 html validation](/assets/images/PP2_w3.png)
+- CSS
+    - The CSS code was validated and cleared via [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/).
+![photo proof of w3 css validation](/assets/images/PP2_w3_CSS.png)    
+- Accessibility
+    - I confirmed that the color palette and fonts are easily accessible by using [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fkrystalcoding.github.io%2Fantisocial-dog-meetups%2F&form_factor=desktop) in devtools.
+![photo proof of accessibility score](/assets/images/PP2_Lighthouse.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Unfixed Bugs/Flaws
+- In the future, for best use of this game, I will make a max-score which ends in a win/lose scenario.
+- I would like to, in time, create a function for the Game Area to disappear when the Game Instructions area is visible.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Deployment
+- The Club's Website was deployed using GitHub pages. The steps to deploy are the following:
+    - From the [GitHub repository](https://github.com/KrystalCoding/GuessTheColors), navigate to the Settings tab.
+    - On the left hand side, scroll down to the navigation link titled Pages.
+    - From the branch source drop-down menu, select the option Master.
+    - When the page was refreshed, the link for deployment was provided.
+Once again, the live link can be found here: [Guess the Colors Game](https://krystalcoding.github.io/GuessTheColors/).
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Credit
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Content
+- The code to design the interactivity, format the social media footer, was inspired by the [Love Maths](https://github.com/KrystalCoding/love-maths) Project with tutorial videos by [The Code Institute](https://codeinstitute.net). Assistance from tutors at the Institute was also utilized for image responsiveness.
+- Resource [W3 Schools](https://www.w3schools.com/js/) was used in assiting to create the interactivity of the hidden sections.
+- [GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images) provided the basic writing and syntax used in this README.md file.
+- [Am I Responsive](https://ui.dev/amiresponsive?url=https://krystalcoding.github.io/antisocial-dog-meetups/) was responsible for creating the responsive design photo used in the beginning of this README.md.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Media
+- The background image was all borrowed from [Pexels](https://www.pexels.com/).
+- The icons were borrowed from [Font Awesome](https://fontawesome.com/start).
