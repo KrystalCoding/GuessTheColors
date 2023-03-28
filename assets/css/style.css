@@ -252,7 +252,7 @@ footer {
 @media screen and (max-width: 380px) {
   .score-area li,
   .game-instructions li {
-    font-size: 0.2rem;
+    font-size: 0.4rem;
   }
 
   .score-area {
