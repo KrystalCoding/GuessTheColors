@@ -84,9 +84,11 @@ Users of this web page will be able to find all the information they need about 
 -Grammar 
     - Grammer in README.md was checked on [Grammarly](https://app.grammarly.com/).
 
-### Unfixed Bugs/Flaws
-- In the future, as it is very unlikely the deeper philosophical nature of this faux-game will be fully appreciated, I will make a max-score that ends in a win/lose scenario.
-- I would like to, in time, create a function for the Game Area to disappear when the Game Instructions area is visible.
+### Unfixed Bugs
+- There are no unfixed Bugs, but here are the notes for future adjusments I might make to the site:
+    - In the future, as it is very unlikely the deeper philosophical nature of this faux-game will be fully appreciated, I will make a max-score that ends in a win/lose scenario.
+    - I would like to, in time, create a function for the Game Area to disappear when the Game Instructions area is visible.
+    - There is a tag called "game-container" that is called but unused in the JavaScript file. I am intentionally leaving it there for future use of that specific section.
 
 ## Deployment
 - The Club's Website was deployed using GitHub pages. The steps to deploy are the following:
