@@ -1,7 +1,7 @@
 /* Background image to whole web page */
 
 body {
-  background-image: url("assets/images/background-image.jpg");
+  background-image: url("/workspace/GuessTheColors/assets/images/background-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   }
