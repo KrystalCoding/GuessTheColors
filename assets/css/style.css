@@ -5,6 +5,7 @@ body {
     background-image: url("../images/background-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 150px;
 }
 
 body::before {
@@ -281,11 +282,8 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: black;
-    color: white;
     text-align: center;
     padding: 1rem;
-    height: 150px;
 }
 
 .social-networks {
@@ -308,6 +306,7 @@ footer {
     .social-networks i:hover {
     color: red;
     }
+
 /* Creates design responsiveness for screen sizes 768px or smaller */
 
 @media screen and (max-width: 768px) {
