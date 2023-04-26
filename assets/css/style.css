@@ -287,15 +287,27 @@ footer {
 
 .social-networks>li {
     display: inline;
+    margin 0 10px
 }
-
+/*
 .social-networks i {
     font-size: 160%;
     margin: 5%;
     padding: 1%;
     color: blue;
 }
-
+*/
+.social-networks i {
+    font-size: 160%;
+    margin: 5%;
+    padding: 1%;
+    color: blue;
+    transition: color 0.3s ease;
+    }
+    
+    .social-networks i:hover {
+    color: red;
+    }
 /* Creates design responsiveness for screen sizes 768px or smaller */
 
 @media screen and (max-width: 768px) {
