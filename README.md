@@ -11,7 +11,7 @@ However, there is a deeper meaning at play (...get it? ...play?): there is no wi
 
 Users of this web page will be able to find all the information they need about how the functionality works, a colorful and lighthearted design with clickable buttons, a background picture meant to inspire, and links to the creator's social media.
 
-![Responsive web design screenshot](assets/images/PP2_AmIResponsive.png)
+![Responsive web design screenshot](assets/images/pp2_responsiveness.png)
 
 ## Features
 - Navigation
