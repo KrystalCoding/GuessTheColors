@@ -1,349 +1,361 @@
 /* Background image to whole web page */
 
 body {
-  background-image: url("../images/background-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  }
+    position: relative;
+    background-image: url("../images/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* semi-transparent black overlay */
+    z-index: -1;
+    /* place the pseudo-element behind all other elements */
+}
 
 /* Global styles */
 
 * {
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Wrapper div styles */
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 /* Header text styles */
 
 .heading {
-  font-family: 'Righteous', sans-serif;
-  text-align: center;
-  font-size: 4rem;
-  margin-top: 2rem;
-  color: blue;
-  -webkit-text-stroke: 2px black;
-  text-stroke: 2px black;
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    color: blue;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
 }
 
 /* Subheading styles */
 
 h3 {
-  font-family: 'Righteous', sans-serif;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 2rem;
-  color: purple;
-  -webkit-text-stroke: 2px black;
-  text-stroke: 2px black;
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: purple;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
 }
 
 /* Game Instructions clickable button styles */
 
 #instructions-button {
-  background-color: green;
-  color: black;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 15px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  width: 50%;
-  max-width: 400px;
-  margin: 0 auto;
-  display: block;
+    background-color: green;
+    color: black;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
 }
 
 #instructions-button:hover {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 /* Hidden instructions div styles */
 
 .game-instructions {
-  background-color: rgba(255, 192, 203, 0.432);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 70%;
-  text-align: center;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
-  color: brown;
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    background-color: rgba(255, 192, 203, 0.432);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 70%;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    color: brown;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Game instructions text styles */
 
 .game-instructions h2 {
-  font-family: 'Righteous', sans-serif;
-  font-size: 3rem;
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: purple;
-  -webkit-text-stroke: 2px black;
-  text-stroke: 2px black;
+    font-family: 'Righteous', sans-serif;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: purple;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
 }
 
 .game-instructions h3 {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: orange;
-  -webkit-text-stroke: 2px black;
-  text-stroke: 2px black;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: orange;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
 }
 
 .game-instructions p {
-  margin-bottom: 10px;
-  color: blue;
-  -webkit-text-stroke: .5px black;
-  text-stroke: .5px black;
+    margin-bottom: 10px;
+    color: blue;
+    -webkit-text-stroke: .5px black;
+    text-stroke: .5px black;
 }
 
 /* Game instructions list of color options available to be guessed by user styles */
 
 .game-instructions ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .game-instructions li {
-  margin-right: 20px;
-  font-weight: bold;
+    margin-right: 20px;
+    font-weight: bold;
 }
 
 /* Play Game button contained within Instructions div styles */
 
 #home-btn {
-  background-color: green;
-  color: black;
-  font-weight: bold;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 #home-btn:hover {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 /* Initially hides Instructions area until button click */
 
 .game-instructions {
-  display: none;
+    display: none;
 }
 
 /* Game div container styles */
 
 .game-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
 }
 
 /* Game box display styles */
 
 #color-box {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  margin-bottom: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 /* User guess input styles */
 
 #color-guess {
-  margin: 1rem;
-  font-weight: bold;
-  color: black;
-  font-size: 1.8rem;
-  height: 2.5rem;
-  width: 10rem;
-  padding: 0.5rem;
-  display: inline-block;
+    margin: 1rem;
+    font-weight: bold;
+    color: black;
+    font-size: 1.8rem;
+    height: 2.5rem;
+    width: 10rem;
+    padding: 0.5rem;
+    display: inline-block;
 }
 
 /* Directional label for user input styles */
 
 label[for="color-guess"] {
-  color: blue;
-  font-weight: bold;
-  -webkit-text-stroke: .5px black;
-  text-stroke: .5px black;
-  font-size: 1.5rem;
-  line-height: 2rem;
+    color: blue;
+    font-weight: bold;
+    -webkit-text-stroke: .5px black;
+    text-stroke: .5px black;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 /* Game submit button styles */
 
 #submit-button {
-  padding: 0.5rem 1.5rem;
-  border-radius: 15px;
-  background-color: green;
-  color: black;
-  font-size: 1.5rem;
-  font-weight: bold;
-  height: 50px;
-  cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    background-color: green;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
 }
 
 #submit-button:hover {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 /* Feedback to user styles */
 
 #result-message {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-/* Score area container styles */
-
 .score-area {
-  font-size: 2rem;
-  width: 70%;
-  height: 200px;
-  margin-left: 20px;
-  padding: 10px;
-  border: 1px solid black;
-  padding-top: 40px;
-  padding-left: 10px;
-  background-color: rgba(255, 192, 203, 0.432);
-  color: red;
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 10px;
+    font-size: 2rem;
+    width: 70%;
+    height: 200px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(255, 192, 203, 0.432);
+    color: red;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
 }
 
 /* Score area color options available to be guessed by user styles */
 
 .score-area ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .score-area li {
-  margin-right: 20px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: brown;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: brown;
 }
 
 /* Social network link icon styles */
 
 footer {
-  height: 150px;
+    height: 150px;
 }
 
 .social-networks {
-  text-align: center;
+    text-align: center;
 }
 
 .social-networks>li {
-  display: inline;
+    display: inline;
 }
 
 .social-networks i {
-  font-size: 160%;
-  margin: 5%;
-  padding: 1%;
-  color: blue;
+    font-size: 160%;
+    margin: 5%;
+    padding: 1%;
+    color: blue;
 }
 
 /* Creates design responsiveness for screen sizes 768px or smaller */
 
 @media screen and (max-width: 768px) {
 
-  .score-area li,
-  .game-instructions li {
-    font-size: 0.8rem;
-  }
+    .score-area li,
+    .game-instructions li {
+        font-size: 0.8rem;
+    }
 
-  #color-guess {
-    margin: 0 auto;
-    width: 80%;
-    max-width: 10rem;
-  }
+    #color-guess {
+        margin: 0 auto;
+        width: 80%;
+        max-width: 10rem;
+    }
 
-  .wrapper .score-area ul .game-container {
-    max-width: 90%;
-    padding: 10px;
-    font-size: 0.9rem;
-  }
+    .wrapper .score-area ul .game-container {
+        max-width: 90%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 }
 
 /* Creates design responsiveness for screen sizes 624px or smaller */
 
 @media screen and (max-width: 624px) {
 
-  .score-area li,
-  .game-instructions li {
-    font-size: 0.8rem;
-  }
+    .score-area li,
+    .game-instructions li {
+        font-size: 0.8rem;
+    }
 
-  .score-area ul {
-    margin-right: 0;
-    margin-bottom: 7px;
-  }
+    .score-area ul {
+        margin-right: 0;
+        margin-bottom: 7px;
+    }
 
-  .wrapper .game-container {
-    max-width: 80%;
-    padding: 7px;
-    font-size: 0.7rem;
-  }
+    .wrapper .game-container {
+        max-width: 80%;
+        padding: 7px;
+        font-size: 0.7rem;
+    }
 }
 
 /* Creates design responsiveness for screen sizes 380px or smaller */
 
 @media screen and (max-width: 380px) {
 
-  .score-area li,
-  .game-instructions li {
-    font-size: 0.6rem;
-  }
+    .score-area li,
+    .game-instructions li {
+        font-size: 0.6rem;
+    }
 
-  .score-area {
-    margin-right: 0;
-    margin-bottom: 5px;
-  }
+    .score-area {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
 
-  .wrapper .game-container {
-    max-width: 70%;
-    padding: 5px;
-    font-size: .4rem;
-  }
+    .wrapper .game-container {
+        max-width: 70%;
+        padding: 5px;
+        font-size: .4rem;
+    }
 }
