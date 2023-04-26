@@ -311,6 +311,9 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    body {
+        padding-bottom: 100px;
+    }
     .score-area li,
     .game-instructions li {
         font-size: 0.8rem;
@@ -333,6 +336,10 @@ footer {
 
 @media screen and (max-width: 624px) {
 
+    body {
+        padding-bottom: 75px;
+    }
+
     .score-area li,
     .game-instructions li {
         font-size: 0.8rem;
@@ -353,6 +360,10 @@ footer {
 /* Creates design responsiveness for screen sizes 380px or smaller */
 
 @media screen and (max-width: 380px) {
+
+    body {
+        padding-bottom: 50px;
+    }
 
     .score-area li,
     .game-instructions li {
