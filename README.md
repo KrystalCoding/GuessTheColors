@@ -58,6 +58,8 @@ Users of this web page will be able to find all the information they need about 
 
 ### Bugs
 - The background image loading time was the challenge to work around in this design.
+- On first deployment, the background image and content did not cover the whole page. A felxbox aspect was added to the css code to adjust the sizing of all the elements in order to fill the entire page, at all screen sizes.
+- On first deployment, the contrast between text and background was not great enough for accessibility. I added a white haze over the whole background image and black outlining to the text in order to increase contrast and visibility for user ease.
 
 ### Validator Testing
 
@@ -104,6 +106,7 @@ Once again, the live link can be found here: [Guess the Colors Game](https://kry
 ### Content
 - The code to design the interactivity and the social media footer, was inspired by the [Love Maths](https://github.com/KrystalCoding/love-maths) Project with tutorial videos by [The Code Institute](https://codeinstitute.net). Assistance from tutors at the Institute was also utilized for image responsiveness.
 - Resource [W3 Schools](https://www.w3schools.com/js/) was used in assisting to create the interactivity of the hidden sections.
+- Resource [CSS-Tricks](https://css-tricks.com/couple-takes-sticky-footer/#aa-there-is-flexbox) was used to create a flexbox to keep the content covering the entire page.
 - [GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images) provided the basic writing and syntax used in this README.md file.
 - [Am I Responsive](https://ui.dev/amiresponsive?url=https://krystalcoding.github.io/antisocial-dog-meetups/) was responsible for creating the responsive design photo used at the beginning of this README.md.
 
