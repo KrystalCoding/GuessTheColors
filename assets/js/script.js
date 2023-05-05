@@ -106,4 +106,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // set focus on colorGuess after it's fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        colorGuess.focus();
+    });
+
+    // set focus on colorGuess after it's fully loaded
+    setTimeout(() => {
+        colorGuess.focus();
+    }, 0);
+
 });

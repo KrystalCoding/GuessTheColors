@@ -112,14 +112,7 @@ h3 {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
-    color: brown;
-    text-shadow:
-        1px 1px 0 #000,
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-    font-weight: bold;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,11 +153,11 @@ h3 {
     margin-bottom: 10px;
     color: blue;
     text-shadow:
-        1px 1px 0 #000,
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+        0.5px 0.5px 0 #000,
+        -0.5px -0.5px 0 #000,
+        0.5px -0.5px 0 #000,
+        -0.5px 0.5px 0 #000,
+        0.5px 0.5px 0 #000;
 }
 
 /* Game instructions list of color options available to be guessed by user styles */
@@ -242,11 +235,11 @@ label[for="color-guess"] {
     color: blue;
     font-weight: bold;
     text-shadow:
-        1px 1px 0 #000,
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+        0.5px 0.5px 0 #000,
+        -0.5px -0.5px 0 #000,
+        0.5px -0.5px 0 #000,
+        -0.5px 0.5px 0 #000,
+        0.5px 0.5px 0 #000;
     font-size: 1.5rem;
     line-height: 2rem;
 }
@@ -288,11 +281,11 @@ label[for="color-guess"] {
     background-color: rgba(255, 192, 203, 0.432);
     color: red;
     text-shadow:
-        1px 1px 0 #000,
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+        0.5px 0.5px 0 #000,
+        -0.5px -0.5px 0 #000,
+        0.5px -0.5px 0 #000,
+        -0.5px 0.5px 0 #000,
+        0.5px 0.5px 0 #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,9 +305,8 @@ label[for="color-guess"] {
 
 .score-area li {
     margin-right: 20px;
-    font-weight: bold;
-    font-size: 1rem;
-    color: brown;
+    font-size: 1.2rem;
+    color: black;
 }
 
 .social-networks {
