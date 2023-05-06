@@ -71,13 +71,26 @@ document.addEventListener("DOMContentLoaded", function () {
         return color;
     }
 
+    // Displays error message alert if empty input is entered
+    function validate() {
+        if (colorGuess.value === "") {
+          alert("Please enter a color from the options provided.");
+          return false;
+        } else {
+          return true;
+        }
+      }      
+
     // Processes user guess even if they used capital letters unlike our predefined 
     function handleGuess() {
         // Convert user's input to lowercase
         const guessedColor = colorGuess.value.toLowerCase();
+        // Check if user's input is empty
+        if (!validate()) {
+            return;
+        }
         // Set the color display box to a randomly generated color and get the color value
         const correctColor = setColor();
-
         // Creates a message to user about result of their guess and increments the scoreboard accordingly
         if (guessedColor === correctColor) {
             correctGuesses++;
@@ -91,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("result-message").textContent = `The correct color was ${correctColor}.`;
         }
     }
+
 
     /**
     * Adds functionality to the submit button and the color guess input field.
