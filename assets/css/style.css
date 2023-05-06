@@ -107,7 +107,7 @@ h3 {
     border-radius: 10px;
     padding: 20px;
     margin: 80px auto;
-    max-width: 70%;
+    max-width: 90%;
     text-align: center;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     font-family: 'Raleway', sans-serif;
@@ -374,33 +374,76 @@ footer {
     }
 }
 
-/* Creates design responsiveness for screen sizes 624px or smaller */
+/* Mobile styles */
 
-@media screen and (max-width: 624px) {
+@media screen and (max-width: 648px) {
 
-    body {
-        padding-bottom: 75px;
+    /* Header text styles */
+
+    .heading {
+        font-size: 3rem;
     }
 
-    .score-area li,
+    /* Subheading styles */
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Game Instructions clickable button styles */
+
+    #instructions-button {
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+        width: 70%;
+    }
+
+    /* Hidden instructions div styles */
+
+    .game-instructions {
+        margin: 50px auto;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Game instructions text styles */
+
+    .game-instructions h2 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .game-instructions h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .game-instructions p {
+        margin-bottom: 5px;
+    }
+
+    /* Game instructions list of color options available to be guessed by user styles */
+
+    .game-instructions ul {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
     .game-instructions li {
-        font-size: 0.8rem;
-    }
-
-    .score-area ul {
         margin-right: 0;
-        margin-bottom: 7px;
+        margin-bottom: 5px;
     }
 
-    .wrapper .game-container {
-        max-width: 80%;
-        padding: 7px;
-        font-size: 0.7rem;
+    /* Play Game button contained within Instructions div styles */
+
+    #home-btn {
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
     }
 }
 
 /* Creates design responsiveness for screen sizes 380px or smaller */
-
+/*
 @media screen and (max-width: 380px) {
 
     body {
@@ -421,5 +464,73 @@ footer {
         max-width: 70%;
         padding: 5px;
         font-size: .4rem;
+    }
+}
+*/
+/* Mobile styles */
+
+@media screen and (max-width: 380px) {
+
+    /* Header text styles */
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    /* Subheading styles */
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    /* Game Instructions clickable button styles */
+
+    #instructions-button {
+        font-size: 1rem;
+        padding: 0.2rem .75rem;
+        width: 60%;
+    }
+
+    /* Hidden instructions div styles */
+
+    .game-instructions {
+        margin: 40px auto;
+        font-size: .75rem;
+        padding: 7px;
+    }
+
+    /* Game instructions text styles */
+
+    .game-instructions h2 {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .game-instructions h3 {
+        font-size: 1rem;
+        margin-bottom: 7px;
+    }
+
+    .game-instructions p {
+        margin-bottom: 3px;
+    }
+
+    /* Game instructions list of color options available to be guessed by user styles */
+
+    .game-instructions ul {
+        flex-direction: column;
+        margin-bottom: 7px;
+    }
+
+    .game-instructions li {
+        margin-right: 0;
+        margin-bottom: 3px;
+    }
+
+    /* Play Game button contained within Instructions div styles */
+
+    #home-btn {
+        font-size: 1rem;
+        padding: 0.2rem .75rem;
     }
 }
