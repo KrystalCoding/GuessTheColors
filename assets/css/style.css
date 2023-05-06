@@ -45,6 +45,7 @@ body::before {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    z-index: 1;
 }
 
 /* Header text styles */
@@ -443,30 +444,6 @@ footer {
 }
 
 /* Creates design responsiveness for screen sizes 380px or smaller */
-/*
-@media screen and (max-width: 380px) {
-
-    body {
-        padding-bottom: 50px;
-    }
-
-    .score-area li,
-    .game-instructions li {
-        font-size: 0.6rem;
-    }
-
-    .score-area {
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-
-    .wrapper .game-container {
-        max-width: 70%;
-        padding: 5px;
-        font-size: .4rem;
-    }
-}
-*/
 /* Mobile styles */
 
 @media screen and (max-width: 380px) {
