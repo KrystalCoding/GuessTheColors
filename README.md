@@ -22,7 +22,7 @@ Users of this web page will be able to find all the information they need about 
     - Underneath the Guess box and Submit button is the score box to tally the correct and incorrect guesses, along with the color options the User has to guess from.
     - Finally is a footer with links to social media pages.
 
-![screenshot of home page](assets/images/)
+![screenshot of home page](assets/images/homepage-2.png)
 
 - Game Instructions
     - The Game Instructions button has a clickable functionality that reveals the rules of the game for the User.
@@ -58,8 +58,10 @@ Users of this web page will be able to find all the information they need about 
 
 ### Bugs
 - The background image loading time was the challenge to work around in this design.
-- On first deployment, the background image and content did not cover the whole page. A felxbox aspect was added to the css code to adjust the sizing of all the elements in order to fill the entire page, at all screen sizes.
+- On first deployment, the background image and content did not cover the whole page. A flexbox aspect was added to the css code to adjust the sizing of all the elements in order to fill the entire page, at all screen sizes.
 - On first deployment, the contrast between text and background was not great enough for accessibility. I added a white haze over the whole background image and black outlining to the text in order to increase contrast and visibility for user ease.
+- Defensive design suffered on first deployment, because I allowed user to enter an empty input. I corrected this by halting the game process if the input text field was left blank. The user immediately receives a banner to alert them that they must enter some text into the input field:
+![Error banner](assets/images/error-banner-2.png)
 
 ### Validator Testing
 
