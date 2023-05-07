@@ -11,7 +11,7 @@ However, there is a deeper meaning at play (...get it? ...play?): there is no wi
 
 Users of this web page will be able to find all the information they need about how the functionality works, a colorful and lighthearted design with clickable buttons, a background picture meant to inspire, and links to the creator's social media.
 
-![Responsive web design screenshot](assets/images/responsiveness.png)
+![Responsive web design screenshot](assets/images/responsiveness-2.png)
 
 ## Features
 - Navigation
@@ -22,31 +22,31 @@ Users of this web page will be able to find all the information they need about 
     - Underneath the Guess box and Submit button is the score box to tally the correct and incorrect guesses, along with the color options the User has to guess from.
     - Finally is a footer with links to social media pages.
 
-![screenshot of home page](assets/images/homepage.png)
+![screenshot of home page](assets/images/)
 
 - Game Instructions
     - The Game Instructions button has a clickable functionality that reveals the rules of the game for the User.
     - Contained within this section is a button to again hide the Instructions and return to the home page containing primarily the Game Area with the functions to play the game.
 
-![Game Instructions screenshot](assets/images/game-instructions.png)
+![Game Instructions screenshot](assets/images/insructions-2.png)
 
 - Game Area
     - The Game Area contains the functionality of gameplay. There is a color box, initially hidden, which after the User enters a guess (either by using the "Enter" key or clicking the "Submit" button with a mouse pointer) is revealed in the bold color the User was attempting to guess.
     - Beneath the text box is a message telling the User what the correct color was all along, whether or not they guessed correctly.
 
-![Game Area screenshot](assets/images/correct-guess.png)
-![Game Area screenshot](assets/images/incorrect-guess.png)
+![Game Area screenshot](assets/images/game-area-correct-guess-2.png)
+![Game Area screenshot](assets/images/game-area-incorrect-guess-2.png)
 
 - Score Area
     - In the space below the game section is the area that displays the color options the User has to type into the text box. They may type in whatever they please, but only one of the color options presented has a chance of being correct.
     - That same section contains the correct and incorrect scores. It is incremented by one point with each right or wrong answer.
 
-![Score Area screenshot](assets/images/score-area.png)
+![Score Area screenshot](assets/images/score-area-2.png)
 
 - Footer
     - The footer section displays four different icons in the color theme. When clicked, they are working links to what would be either the designer's or the Game's designated Facebook, Twitter, YouTube, and Instagram accounts.
 
-![footer with social media icons screenshot](assets/images/social-media.png)
+![footer with social media icons screenshot](assets/images/footer-2.png)
 
 
 - Design Considerations
@@ -73,16 +73,16 @@ Users of this web page will be able to find all the information they need about 
 
 - HTML
     - The HTML code was validated and cleared via [W3C HTML Validator](https://validator.w3.org/#validate_by_input).
-![photo proof of w3 html validation](assets/images/w3.png)
+![photo proof of w3 html validation](assets/images/html-validation-2.png)
 - CSS
     - The CSS code was validated and cleared via [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/).
-![photo proof of w3 css validation](assets/images/w3-css.png)
+![photo proof of w3 css validation](assets/images/css-validation-2.png)
 - JavaScript 
     - My JavaScript code was validated by [JSHint](https://jshint.com/).
-![photo proof of JSHint validation](assets/images/js-hint.png)
+![photo proof of JSHint validation](assets/images/javascript-validation-2.png)
 - Accessibility
     - I confirmed that the color palette and fonts are easily accessible by using [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fkrystalcoding.github.io%2Fantisocial-dog-meetups%2F&form_factor=desktop) in devtools.
-![photo proof of accessibility score](assets/images/lighthouse.png)
+![photo proof of accessibility score](assets/images/lighthouse-validation-2.png)
 -Grammar 
     - Grammer in README.md was checked on [Grammarly](https://app.grammarly.com/).
 
