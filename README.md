@@ -81,6 +81,7 @@ Users of this web page will be able to find all the information they need about 
 ![photo proof of w3 css validation](assets/images/css-validation-2.png)
 - JavaScript 
     - My JavaScript code was validated by [JSHint](https://jshint.com/).
+    
 ![photo proof of JSHint validation](assets/images/javascript-validation-2.png)
 - Accessibility
     - I confirmed that the color palette and fonts are easily accessible by using [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fkrystalcoding.github.io%2Fantisocial-dog-meetups%2F&form_factor=desktop) in devtools.
