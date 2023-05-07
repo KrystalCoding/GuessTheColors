@@ -10,7 +10,7 @@ body {
     padding: 0;
     display: flex;
     position: relative;
-    background-image: url("../images/background-image.jpg");
+    background-image: url("../images/background-image-50.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
